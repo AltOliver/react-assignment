@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 //import QRCode from 'qrcode-react'; //This declaration could have been used if qrcode-react is ES6 module feature compliant
 
-const Emailwork: React.FC = () => {
+const Emailwork: React.FC = () => { //qrcode-react is not yet ES6 module feature compliant, hence this approach to declaration.
   const QRCode = require('qrcode.react');
 
   const [message, setMessage] = useState('');
